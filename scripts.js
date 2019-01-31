@@ -18,66 +18,27 @@ var mapLayers = [
 	{
 		"Name": "2017",//folder in tiles-layers/
 		"Base": {
-			"Station map": "full",//title: subfolder
-			"Schematic": "schematic",
 			"Collage for the year": "collage"
-		},
-		"Overlay": {
-			"Disposal": "disposal",
-			"Pipes": "pipes",
-			"Power net": "power",
-			"Titles": "titles"
 		}
 	},
 	{
-		"Name": "2016",//folder in tiles-layers/
+		"Name": "2016",
 		"Base": {
-			"Station map": "full",//title: subfolder
-			"Schematic": "schematic",
 			"Collage for the year": "collage"
-		},
-		"Overlay": {
-			"Disposal": "disposal",
-			"Pipes": "pipes",
-			"Power net": "power",
-			"Titles": "titles"
 		}
 	},
 	{
 		"Name": "2015",
 		"Base": {
-			"Station map": "full",
-			"Schematic": "schematic",
 			"Collage for the year": "collage"
-		},
-		"Overlay": {
-			"Disposal": "disposal",
-			"Pipes": "pipes",
-			"Power net": "power",
-			"Titles": "titles"
 		}
 	},
 	{
 		"Name": "2014",
 		"Base": {
-			"Station map": "full",
-			"Schematic": "schematic",
 			"Collage for the year": "collage"
-		},
-		"Overlay": {
-			"Disposal": "disposal",
-			"Pipes": "pipes",
-			"Power net": "power",
-			"Titles": "titles"
 		}
-	},
-	{
-		"Name": "Marines",
-		"Base": {
-			"Station map": "marines",
-			"NMV SULACO": "sulaco"
-		}
-	},
+	}
 ];
 
 var mapLayersLookup = {};
@@ -150,7 +111,7 @@ function mapInit(mapName) {
 	}
 	
 	
-	leafletMap.addLayer(baseMaps["Station map"]);
+	leafletMap.addLayer(baseMaps["Collage for the year"]);
 	window.location.hash = mapName;
 	
 	var lcontrol;
